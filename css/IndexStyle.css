@@ -1,0 +1,32 @@
+
+/*body & general*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: LostSignal, sans-serif, Times, serif;
+  letter-spacing: 0.2vw;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: white;
+  background-color: black;
+  font-size: 3vw;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/*main*/
+main {
+  margin-bottom: 2vh;
+  padding-top: 2vw;
+}
+
+
+
+
+/* Media Queries - Responsive Design */
+
+/* End Media Queries - Responsive Design*/
