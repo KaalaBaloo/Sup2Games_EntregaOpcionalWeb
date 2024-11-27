@@ -24,25 +24,33 @@ body {
 nav {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   width: 25vw; 
   height: 100vh;
+  top: 0;
   background-color: #222;
   padding: 1rem; 
-  overflow: hidden; 
-  font-size: 2vw;
+  overflow: visible; 
+  position: fixed;
+  box-shadow: 15px 0 40px rgba(255, 255, 255, 0.4);
 }
 
-nav img {
-  object-fit: contain;
-  width: 100%; 
+nav #Logo a{
+  font-size: 3vw;
+  color: white;
+  text-decoration: none; 
+}
+
+nav #Logo  h1 #red {
+  color: red;
 }
 
 nav #NavOptions a{
   display: block; 
   text-align: left;
-  font-size: 1rem; 
+  font-size: 1.25rem; 
   color: white; 
-  background-color: #444; 
+  background-color: #222; 
   padding: 0.8rem;
   margin: 0.5rem 0; 
   border-radius: 10px;
@@ -55,6 +63,17 @@ nav #NavOptions a:hover {
   color: #ddd; 
 }
 
+nav #Blank{
+  padding-bottom: 2.5vh;
+}
+
+nav img {
+  object-fit: contain;
+  width: 100%; 
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
 
 /* Main Content */
 main {
@@ -63,7 +82,7 @@ main {
   padding: 2vw;
   display: flex;
   flex-direction: column;
-  background-color: #333;
+  background-color: #222;
 }
 
 /* Header */
@@ -78,7 +97,7 @@ footer {
   left: 0;
   width: 100%; 
   height: 5vh; 
-  background-color: #111;
+  background-color: #141414;
   display: flex;
   justify-content: center;
   align-items: center;
