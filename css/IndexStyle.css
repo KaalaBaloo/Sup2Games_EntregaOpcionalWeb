@@ -1,5 +1,4 @@
-
-/*body & general*/
+/* Body & General */
 * {
   margin: 0;
   padding: 0;
@@ -16,17 +15,71 @@ body {
   font-size: 3vw;
   min-height: 100vh;
   box-sizing: border-box;
+
+  display: flex; 
+  flex-direction: row;
 }
 
-/*main*/
+/* Navigation */
+nav {
+  display: flex;
+  flex-direction: column;
+  width: 25vw; 
+  height: 100vh;
+  background-color: #222;
+  padding: 1rem; 
+  overflow: hidden; 
+  font-size: 2vw;
+}
+
+nav img {
+  object-fit: contain;
+  width: 100%; 
+}
+
+nav #NavOptions a{
+  display: block; 
+  text-align: left;
+  font-size: 1rem; 
+  color: white; 
+  background-color: #444; 
+  padding: 0.8rem;
+  margin: 0.5rem 0; 
+  border-radius: 10px;
+  text-decoration: none; 
+  transition: background-color 0.3s ease;
+}
+
+nav #NavOptions a:hover {
+  background-color: #555;
+  color: #ddd; 
+}
+
+
+/* Main Content */
 main {
+  flex: 1; 
   margin-bottom: 2vh;
-  padding-top: 2vw;
+  padding: 2vw;
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
 }
 
+/* Header */
+header {
+  text-align: left;
+}
 
-
-
-/* Media Queries - Responsive Design */
-
-/* End Media Queries - Responsive Design*/
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%; 
+  height: 5vh; 
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
