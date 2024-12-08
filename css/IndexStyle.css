@@ -11,7 +11,7 @@
 
 body {
   color: white;
-  background-color: black;
+  background-color: #222;
   font-size: 3vw;
   min-height: 100vh;
   box-sizing: border-box;
@@ -26,14 +26,13 @@ nav {
   width: 18%; 
   height: 100vh;
   background-color: #222;
+  font-weight: bold;
+  position: fixed;
+  box-shadow: 0px 0 20px rgba(255, 255, 255, 0.4); 
+  transition: width 0.3s ease-in-out;
 }
 
-nav  #Shadow{
-  width: 5%; 
-  box-shadow: 0px 0 40px rgba(255, 255, 255, 0.4);
-}
-
-nav  #Base{
+nav #Base{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -43,8 +42,15 @@ nav  #Base{
   padding: 1vw;
 }
 
+nav #closeNav a {
+  font-size: 65%;
+  position: absolute;
+  left: 94%;
+  top: 3%;
+}
+
 nav #Logo a{
-  font-size: 60%;
+  font-size: 55%;
   color: white;
   text-decoration: none; 
 }
@@ -60,7 +66,7 @@ nav #NavOptions a{
   color: white; 
   background-color: #3a3a3a; 
   padding: 4%;
-  margin: 2% 0; 
+  margin: 5% 0; 
   border-radius: 10px;
   text-decoration: none; 
   transition: background-color 0.3s ease;
@@ -72,8 +78,20 @@ nav #NavOptions a:hover {
 }
 
 nav #NavOptions i{
+  font-size: 150%;
   color: black; 
   padding-right: 5%;
+  padding-left: 8%;
+}
+
+nav #NavOptions input{
+  background-color: #222;
+  color: white; 
+  font-weight: bold;
+  font-size: 90%;
+  width: 70%;
+  height: 90%;
+  border-radius: 5px;
 }
 
 nav #Blank{
@@ -89,6 +107,23 @@ nav img {
   padding-bottom: 1vh;
 }
 
+.ClosedNav {
+  width: 5.5%; 
+  transition: width 0.3s ease-in-out; 
+}
+
+nav .ClosedNav .Open{
+  display: none; 
+}
+
+nav .Closed{
+  display: none;
+}
+
+nav .ClosedNav .Closed{
+  display: contents;
+}
+
 
 /* Main */
 main {
@@ -97,13 +132,16 @@ main {
   padding: 2vw;
   display: flex;
   flex-direction: column;
-  background-color: #222;
-  width: 100%;
   text-align: left;
+  padding-left: 20%;
 }
 
 .line hr {
   border-top: 10% solid #ffffff;
+}
+
+header{
+  font-size: 45%;
 }
 
 /* Content */
@@ -128,7 +166,7 @@ main #Block
 main img
 {
   object-fit: contain;
-  width: 45%;
+  width: 35%;
   height: auto;
   overflow: hidden;
   padding-right: 2vw;
@@ -146,7 +184,7 @@ main #Text
 
 main #Text h3
 {
-  padding-bottom: 5%;
+  padding-bottom: 2%;
 }
 
 main #Text h2
@@ -166,7 +204,7 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%; 
-  height: 4%; 
+  height: 3vw; 
   background-color: #141414;
   display: flex;
   justify-content: space-between;
@@ -180,7 +218,7 @@ footer p{
 }
 
 footer #Social {
-  width: 20%;
+  width: 15%;
   display: flex;
   justify-content: end;
 }

@@ -1,8 +1,9 @@
 
-//La función ready() me permite detectar cuando la web (el html) se ha cargado completamente
 
-$(document).ready(function){
-    console.log("jquery");
+$( "#closeNav" ).on( "click", function() {
+    var element = document.getElementById("Nav");
+     element.classList.toggle("ClosedNav");
+     var element = document.getElementById("Base");
+     element.classList.toggle("ClosedNav");
 
-    $("p").toggle();
-}
+  } );

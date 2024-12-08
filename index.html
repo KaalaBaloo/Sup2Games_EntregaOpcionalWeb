@@ -12,15 +12,24 @@
     </head>
 
     <body>
-        <nav>
+        <nav id="Nav">
             <div id="Base">
-                <div id="Logo">
+                <div id="Logo" class="Open">
                     <a href="index.html" target="_self">
                         <h1>SUP<span id="red">2</span></h1>
                         <h1>GAMES</h1>
                     </a>
                 </div>
-                <div id="NavOptions">
+                <div id="Logo" class="Closed">
+                    <a href="index.html" target="_self">
+                        <h1>S<span id="red">2</span></h1>
+                        <h1>GS</h1>
+                    </a>
+                </div>
+                <div id="closeNav">
+                    <a><i class="fa-solid fa-circle-chevron-right"></i></a>
+                </div>
+                <div id="NavOptions" class="Open">
                     <a><i class="fa-solid fa-house"></i>Inicio</a>
                     <a><i class="fa-brands fa-playstation"></i>PlayStation</a>
                     <a><i class="fa-brands fa-xbox"></i>Xbox</a>
@@ -28,16 +37,28 @@
                     <a><i class="fa-solid fa-circle-play"></i>Vídeos</a>
                     <a><i class="fa-solid fa-comment"></i>Contact Us</a>
                 </div>
-                <div id="Blank"></div>
-                <div id="NavOptions">
-                    <a><i class="fa-solid fa-magnifying-glass"></i>Buscar</a>
+                <div id="NavOptions" class="Closed">
+                    <a><i class="fa-solid fa-house"></i></a>
+                    <a><i class="fa-brands fa-playstation"></i></a>
+                    <a><i class="fa-brands fa-xbox"></i></a>
+                    <a><i class="fa-solid fa-gamepad"></i></a>
+                    <a><i class="fa-solid fa-circle-play"></i></a>
+                    <a><i class="fa-solid fa-comment"></i></a>
                 </div>
-                <img src="media/images/placeholder.webp" alt="Spam">
-                <div id="NavOptions">
+                <div id="Blank"></div>
+                <div id="NavOptions" class="Open">
+                    <a><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Buscar"></a>
+                </div>
+                <div id="NavOptions" class="Closed">
+                    <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+                <img src="media/images/placeholder.webp" alt="Spam" class="Open">
+                <div id="NavOptions" class="Open">
                     <a><i class="fa-solid fa-user"></i>Iniciar Sesión</a>
                 </div>
-            </div>
-            <div id ="Shadow">
+                <div id="NavOptions" class="Closed">
+                    <a><i class="fa-solid fa-user"></i></a>
+                </div>
             </div>
         </nav>
 
@@ -59,6 +80,42 @@
                     </div>
                 </div>
                 <hr />
+                <div id="Block">
+                    <img src="media/images/placeholder.webp" alt="Picture">
+                    <div id="Text">
+                        <h3 id="Time"><u>De cuándo?:</u></h3>
+                        <h2><strong>Título de la noticia</strong></h2>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor..."</p>
+                    </div>
+                </div>
+                <hr />
+                <div id="Block">
+                    <img src="media/images/placeholder.webp" alt="Picture">
+                    <div id="Text">
+                        <h3 id="Time"><u>De cuándo?:</u></h3>
+                        <h2><strong>Título de la noticia</strong></h2>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor..."</p>
+                    </div>
+                </div>
+                <hr />
+                <div id="Block">
+                    <img src="media/images/placeholder.webp" alt="Picture">
+                    <div id="Text">
+                        <h3 id="Time"><u>De cuándo?:</u></h3>
+                        <h2><strong>Título de la noticia</strong></h2>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor..."</p>
+                    </div>
+                </div>
+                <hr />
+                <div id="Block">
+                    <img src="media/images/placeholder.webp" alt="Picture">
+                    <div id="Text">
+                        <h3 id="Time"><u>De cuándo?:</u></h3>
+                        <h2><strong>Título de la noticia</strong></h2>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor..."</p>
+                    </div>
+                </div>
+                <hr />
             </div>
         </main>
 
@@ -71,6 +128,7 @@
             </div>
         </footer>
 
+        <script defer src="js/lib/jquery.js"></script>
         <script defer src="js/index.js"></script>
     </body>
 </html>
