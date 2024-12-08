@@ -98,12 +98,12 @@ main {
   display: flex;
   flex-direction: column;
   background-color: #222;
-  width: 75%;
+  width: 100%;
   text-align: left;
 }
 
 .line hr {
-  border-top: 3px solid #ffffff;
+  border-top: 10% solid #ffffff;
 }
 
 /* Content */
@@ -112,44 +112,46 @@ main #Content
   display: flex;
   flex-direction: column;
   align-items: left;
+  height: 100vh;
 }
 
 main #Block
 {
   display: flex;
   flex-direction: row;
-  align-items: left;
-  padding-top: 3vh;
-  padding-bottom: 3vh;
-}
-
-main #Image
-{
-  width: 100%;
+  align-items: center;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
   height: auto;
-  padding-right: 2vw;
 }
 
-main #Image img
+main img
 {
-  width: 100%;
-  height: 100%;
-
+  object-fit: contain;
+  width: 45%;
+  height: auto;
+  overflow: hidden;
+  padding-right: 2vw;
 }
 
 main #Text
 {
-  font-size: 1.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 30%;
+  padding-right: 10%;
+  text-align: justify;
 }
 
 main #Text h3
 {
-  padding-bottom: 1vh;
+  padding-bottom: 5%;
 }
 
 main #Text h2
 {
-  padding-bottom: 0.8vh;
+  padding-bottom: 2%;
 }
 
 main #Time
