@@ -21,13 +21,25 @@ body {
 /* Navigation */
 nav {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
   width: 25%; 
   height: 100vh;
+}
+
+nav  #Shadow{
+  width: 5%; 
+  background-color: #222;
+  box-shadow: 0px 0 40px rgba(255, 255, 255, 0.4);
+}
+
+nav  #Base{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 95%; 
   background-color: #222;
   padding: 2vw; 
-  box-shadow: 15px 0 40px rgba(255, 255, 255, 0.4);
 }
 
 nav #Logo a{
@@ -43,9 +55,9 @@ nav #Logo  h1 #red {
 nav #NavOptions a{
   display: block; 
   text-align: left;
-  font-size: 1.25rem; 
+  font-size: 70%; 
   color: white; 
-  background-color: #222; 
+  background-color: #3a3a3a; 
   padding: 0.8rem;
   margin: 0.5rem 0; 
   border-radius: 10px;
