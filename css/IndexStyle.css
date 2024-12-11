@@ -234,3 +234,122 @@ footer a{
   color: #FFFFFF;
   font-size: 75%;
 }
+
+
+/* Responsive */
+
+@media only screen and (max-width: 480px) {
+  
+  body {
+    flex-direction: column;
+  }
+
+  /* Navigation */
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 18%; 
+    width: 100vw;
+    background-color: #1C1C1C;
+    font-weight: bold;
+    position: fixed;
+    box-shadow: 0px 0 20px rgba(255, 255, 255, 0.4); 
+    transition: width 0.3s ease-in-out;
+  }
+
+  nav #Base{
+    display: flex;
+    flex-direction: column;
+    width: 80%; 
+    height: 100vh; 
+    overflow: hidden;
+    padding: 1vw;
+  }
+
+  nav #closeNav a {
+    font-size: 65%;
+    position: absolute;
+    left: 94%;
+    top: 3%;
+  }
+
+  nav #Logo a{
+    font-size: 80%;
+    color: #FFFFFF;
+    text-decoration: none; 
+  }
+
+  nav #Logo  h1 #red {
+    color: #FF0000;
+  }
+
+  nav #NavOptions a{
+    display: block; 
+    text-align: left;
+    font-size: 75%; 
+    color: #FFFFFF; 
+    background-color: #3c3c3c; 
+    padding: 4%;
+    margin: 3% 0; 
+    border-radius: 8px;
+    text-decoration: none; 
+    transition: background-color 0.3s ease;
+  }
+
+  nav #NavOptions a:hover {
+    background-color: #3c3c3c;
+    color: #FFFFFF; 
+  }
+
+  nav #NavOptions i{
+    font-size: 250%;
+    color: #000000; 
+    padding-right: 15%;
+    padding-left: 3%;
+  }
+
+  nav #NavOptions input{
+    background-color: #1C1C1C;
+    color: #FFFFFF; 
+    font-weight: bold;
+    font-size: 120%;
+    width: 70%;
+    height: 90%;
+    border-radius: 5px;
+  }
+
+  nav #Blank{
+    padding-bottom: 2vh;
+  }
+
+  nav img {
+    object-fit: contain;
+    height: 40%;
+    width: auto;
+    overflow: hidden;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+  }
+
+  .ClosedNav {
+    width: 5.5%; 
+    transition: width 0.3s ease-in-out; 
+  }
+
+  nav .ClosedNav .Open{
+    display: none; 
+  }
+
+  nav .Closed{
+    display: none;
+  }
+
+  nav .ClosedNav .Closed{
+    display: contents;
+  }
+
+  }
+
+
+  /* End Media Queries - Responsive Design*/
