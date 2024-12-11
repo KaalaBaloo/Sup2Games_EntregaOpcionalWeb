@@ -151,6 +151,12 @@ header{
 }
 
 /* Content */
+
+.mobile
+{
+  display: none;
+}
+
 main #Content
 {
   display: flex;
@@ -246,107 +252,80 @@ footer a{
 
   /* Navigation */
   nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    height: 18%; 
-    width: 100vw;
-    background-color: #1C1C1C;
-    font-weight: bold;
-    position: fixed;
-    box-shadow: 0px 0 20px rgba(255, 255, 255, 0.4); 
-    transition: width 0.3s ease-in-out;
+    width: 70%; 
+    height: 100vh;
+    right: 0;
+    align-items: center;
+    justify-content: center;
   }
 
   nav #Base{
-    display: flex;
-    flex-direction: column;
-    width: 80%; 
-    height: 100vh; 
-    overflow: hidden;
-    padding: 1vw;
+    width: 90%; 
   }
 
   nav #closeNav a {
-    font-size: 65%;
+    font-size: 6vw;
     position: absolute;
-    left: 94%;
-    top: 3%;
+    left: 88%;
+    top: 1%;
   }
 
   nav #Logo a{
-    font-size: 80%;
+    font-size: 0%;
     color: #FFFFFF;
     text-decoration: none; 
   }
 
-  nav #Logo  h1 #red {
-    color: #FF0000;
-  }
-
   nav #NavOptions a{
-    display: block; 
-    text-align: left;
-    font-size: 75%; 
-    color: #FFFFFF; 
-    background-color: #3c3c3c; 
-    padding: 4%;
-    margin: 3% 0; 
-    border-radius: 8px;
-    text-decoration: none; 
-    transition: background-color 0.3s ease;
-  }
-
-  nav #NavOptions a:hover {
-    background-color: #3c3c3c;
-    color: #FFFFFF; 
+    font-size: 100%; 
   }
 
   nav #NavOptions i{
-    font-size: 250%;
-    color: #000000; 
     padding-right: 15%;
     padding-left: 3%;
   }
 
-  nav #NavOptions input{
-    background-color: #1C1C1C;
-    color: #FFFFFF; 
-    font-weight: bold;
-    font-size: 120%;
-    width: 70%;
-    height: 90%;
-    border-radius: 5px;
+  .ClosedNav{
+    background-color: transparent;
+    box-shadow: 0px 0 20px rgba(255, 255, 255, 0); 
   }
 
-  nav #Blank{
-    padding-bottom: 2vh;
-  }
-
-  nav img {
-    object-fit: contain;
-    height: 40%;
-    width: auto;
-    overflow: hidden;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-  }
-
-  .ClosedNav {
-    width: 5.5%; 
+  .ClosedNav #NavOptions{
+    display: none;
     transition: width 0.3s ease-in-out; 
   }
 
-  nav .ClosedNav .Open{
-    display: none; 
+  .ClosedNav {
+    width: 70%; 
   }
 
-  nav .Closed{
-    display: none;
-  }
-
-  nav .ClosedNav .Closed{
+  .ClosedNav #CloseNav{
     display: contents;
+  }
+
+  .mobile
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #1C1C1C;
+    height: 4vh;
+    box-shadow: 0px 50px 10px rgba(255, 255, 255, 0.4); 
+    top: 0;
+  }
+
+  .mobile #Logo a{
+    font-size: 200%;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  
+  .mobile #Logo  h1 #red {
+    color: #FF0000;
+  }
+
+  main {
+    padding: 5%;
   }
 
   }
