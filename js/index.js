@@ -5,5 +5,7 @@ $( "#closeNav" ).on( "click", function() {
      element.classList.toggle("ClosedNav");
      var element = document.getElementById("Base");
      element.classList.toggle("ClosedNav");
+     var element = document.getElementById("Content");
+     element.classList.toggle("ClosedContent");
 
   } );
