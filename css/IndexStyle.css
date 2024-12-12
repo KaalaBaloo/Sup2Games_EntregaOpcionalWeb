@@ -266,7 +266,7 @@ footer a{
   nav #closeNav a {
     font-size: 6vw;
     position: absolute;
-    left: 88%;
+    left: 85%;
     top: 1%;
   }
 
@@ -306,12 +306,21 @@ footer a{
   .mobile
   {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     background-color: #1C1C1C;
-    height: 4vh;
-    box-shadow: 0px 50px 10px rgba(255, 255, 255, 0.4); 
+    height: 6vh;
+    margin-top: -4vh;
+    margin-left: -8vw;
+    margin-right: -8vw;
+    margin-bottom: 2vh;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.4); 
     top: 0;
+  }
+
+  .mobile #Logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5vw;
   }
 
   .mobile #Logo a{
@@ -325,7 +334,7 @@ footer a{
   }
 
   main {
-    padding: 5%;
+    padding: 8%;
   }
 
   }
