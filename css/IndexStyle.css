@@ -324,7 +324,7 @@ footer a{
   }
 
   .mobile #Logo a{
-    font-size: 200%;
+    font-size: 150%;
     color: #FFFFFF;
     text-decoration: none;
   }
@@ -333,8 +333,54 @@ footer a{
     color: #FF0000;
   }
 
+  header{
+    font-size: 75%;
+  }
+
   main {
     padding: 8%;
+  }
+
+  main #Block
+  {
+    flex-direction: column;
+  }
+  
+  main img
+  {
+    width: 40%;
+    padding-right: 0;
+    padding-bottom: 1vh;
+  }
+  
+  main #Text
+  {
+    justify-content: center;
+    font-size: 100%;
+    text-align: justify;
+  }
+
+  main #Text h2
+  {
+    text-align: center;
+  }
+
+  footer {
+    position: relative;
+    height: 5vh;
+    margin-top: -5vh;
+  }
+
+  footer p{
+    font-size: 80%;
+  }
+  
+  footer #Social {
+    width: 25%;
+  }
+  
+  footer a{
+    font-size: 125%;
   }
 
   }
