@@ -290,11 +290,11 @@ footer a{
     z-index: 2;
     
   }
-  .carousel .ButtonClose{
-    display: none;
-    color: transparent;
-    z-index: 1;
-  }
+  .next.ClosedNav {
+    display: none; /* Oculta completamente los botones */
+    visibility: hidden; /* Los hace no interactuables */
+}
+
   
   .carousel button.prev {
     left: 10px;

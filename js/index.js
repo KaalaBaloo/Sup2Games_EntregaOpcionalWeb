@@ -5,8 +5,11 @@ $( "#closeNav" ).on( "click", function() {
      element.classList.toggle("ClosedNav");
      var element = document.getElementById("Content");
      element.classList.toggle("ClosedContent");
-     var element = document.getElementsByClassName("next");
-     element.classList.toggle("ClosedNav");
+     
+     var elements = document.getElementsByClassName("next");
+     Array.from(elements).forEach(el => {
+         el.classList.toggle("ClosedNav"); // Aplica el cambio a cada elemento
+     });
      
 
   } );
