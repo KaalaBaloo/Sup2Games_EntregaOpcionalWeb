@@ -35,7 +35,7 @@
                     <a><i class="fa-brands fa-playstation"></i>PlayStation</a>
                     <a><i class="fa-brands fa-xbox"></i>Xbox</a>
                     <a><i class="fa-solid fa-gamepad"></i>Nintendo</a>
-                    <a href="contact.html"><i class="fa-solid fa-comment"></i>Contact Us</a>
+                    <a><i class="fa-solid fa-comment"></i>Contact Us</a>
                 </div>
                 <div id="NavOptions" class="Closed">
                     <a><i class="fa-solid fa-house"></i></a>
@@ -72,44 +72,39 @@
                     </div>
                 </div>
                 <div class="line">
-                    <h1>Videos</h1>
+                    <h1>Contact Us</h1>
                     <hr />
                 </div>
             </header>
         
-            <div id="Carousels">
-                <!-- Primer carrusel -->
-                <div class="carousel-container">
-                    <h2>Últimos Videos</h2>
-                    <div class="carousel">
-                        <button  class="prev">&#10094;</button>
-                        <div class="carousel-items">
-                            <div class="item"><video src="media/images/Home_Image01.png" controls></video></div>
-                            <div class="item"><video src="media/images/Home_Image01.png" controls></video></div>
-                            <div class="item"><video src="media/images/Home_Image04.png" controls></video></div>
-                        </div>
-                        <button   class="next">&#10095;</button>
-                    </div>
-                </div>
-        
-                <!-- Segundo carrusel -->
-                <div class="carousel-container">
-                    <h2>Videos Recomendados</h2>
-                    <div class="carousel">
-                        <button  class="prev">&#10094;</button>
-                        <div class="carousel-items">
-                            <div class="item"><video src="media/images/Home_Image01.png" controls></video></div>
-                            <div class="item"><video src="media/images/Home_Image02.png" controls></video></div>
-                            <div class="item"><video src="media/images/Home_Image03.png" controls></video></div>
-                        </div>
-                        <button  class="next">&#10095;</button>
-                    </div>
-                </div>
+            <div id="formulario">
+                <form>
+                    <p>Rellena el siguiente formulario para ponerte en contacto con nosotros. Tu opinión es importante para nosotros</p>
+                    <br>
+                    <label for="nombre">Nombre </label>
+                    <input type="text" id="nombre" placeholder="Nombre" required>
+                    <br>
+                    <label for="apellido">Apellidos </label>
+                    <input type="text" id="apellido" placeholder="Apellidos" required>
+                    <br>
+                    <label for="email">Correo Electrónico </label>
+                    <input type="email" id="email" placeholder="ejemplo@gmail.com" required>
+                    <br>
+                    <label for="telefono">Télefono </label>
+                    <input type="tel" id="telefono" placeholder="666 666 666" required>
+                    <br>
+                    <label for="asunto">Asunto </label>
+                    <input type="text" id="asunto" placeholder="Título" required>
+                    <br>
+                    <label for="mensaje">Mensaje </label>
+                    <textarea id="mensaje" placeholder="Ingresa tu mensaje..."></textarea required>
+                    <br>
+                    <input type="submit" name="enviar" value="Enviar">
+                </form>
             </div>
         </main>
         
             
             <script defer src="js/lib/jquery.js"></script>
             <script defer src="js/index.js"></script>
-
-            
+            <script defer src="js/lib/FormValidate.js"></script>
