@@ -240,6 +240,73 @@ footer a{
   color: #FFFFFF;
   font-size: 75%;
 }
+  /* Carrusel general */
+  .carousel-container {
+    margin: 30px auto;
+    text-align: center;
+    width: 90%;
+    
+  }
+  
+  .carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    margin: 20px 0;
+  
+  }
+  
+  .carousel-items {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: fit-content;
+  }
+  
+  .carousel .item {
+    flex: 0 0 300px; /* Ancho de cada video */
+    margin: 0 10px;
+  }
+  
+  .carousel .item video {
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Botones del carrusel */
+  .carousel button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    
+  }
+  .carousel .ButtonClose{
+    display: none;
+    color: transparent;
+    z-index: 1;
+  }
+  
+  .carousel button.prev {
+    left: 10px;
+  }
+  
+  .carousel button.next {
+    right: 10px;
+  }
+  
+  .carousel button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
 
 
 /* Responsive */
@@ -257,10 +324,12 @@ footer a{
     right: 0;
     align-items: center;
     justify-content: center;
+    z-index: 2;
   }
 
   nav #Base{
     width: 90%; 
+    
   }
 
   nav #closeNav a {
@@ -382,6 +451,10 @@ footer a{
   footer a{
     font-size: 125%;
   }
+
+
+
+
 
   }
 
